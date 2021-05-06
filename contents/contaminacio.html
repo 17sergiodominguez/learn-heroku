@@ -37,6 +37,14 @@
         background-size:100%;
         background-repeat:no-repeat;
       }
+      label {
+        padding:10px;
+        margin:5px;
+        background-color: rgba(0,0,0,.05);
+        border-radius:10px;
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0);
+        display:block;
+      }
       a {
         text-decoration: none; /* no underline */
       }
@@ -49,15 +57,62 @@
         background-color:white;
         opacity:80%;
       }
+      .hidden {
+        display:none;
+      }
+      input:checked + h2 + div {
+        display:block;
+      }
+      input + h2 + div {
+        display:none;
+      }
+      #main {
+        padding:10px;
+      }
     </style>
   </head>
   <body>
-    <h1>Que és la contaminació atmosfèrica?</h1>
-    <div>La contaminació atmosfèrica és la presència d'agents contaminants a l'atmosfera. La font d'aquests agents contaminants és l'activitat humana, principalment l'activitat industrial i el transport.
+    <div id = "main">
+      <label><input class = "hidden" type = "checkbox"/><h2>Que és la contaminació atmosfèrica?</h2>
+      <div onclick = "return false;">La contaminació atmosfèrica és la presència d'agents contaminants a 
+        l'atmosfera. La font d'aquests agents contaminants és l'activitat humana, 
+        principalment l'activitat industrial i el transport.</div>
+      </label>
+      <label><input class = "hidden" type = "checkbox"/><h2>Què és l'atmosfera?</h2>
+        <div onclick = "return false;">L'atmosfera és una capa formada per diferents gasos que envolta la Terra, els éssers que vivim a la Terra depenem d'ella per poder viure. L'atmosfera ha anat canviant amb el pas del temps (han anat variant les proporcions dels gasos que la formen).
 </div>
-    <h1>Què és l'atmosfera?</h1>
-    <div>L'atmosfera és una capa formada per diferents gasos que envolta la Terra, els éssers que vivim a la Terra depenem d'ella per poder viure. L'atmosfera ha anat canviant amb el pas del temps (han anat variant les proporcions dels gasos que la formen).
-</div>
-    <h1>L'atmosfera està formada per:</h1>
+      </label>
+     <label><input class = "hidden" type = "checkbox"/><h2>L'atmosfera està formada per:</h2>
+      <div onclick = "return false;">
+        <h3>Gasos principals:</h3>
+        <list>
+          <li>
+          El Nitrogen (N) és el gas que més abunda a l'atmosfera, hi ha 78% en tota l'atmosfera.
+          </li>
+          <li>
+            L'Oxigen (O2) és el segon gas que més abunda a l'atmosfera, és 21% dels gasos que hi ha.
+          </li>
+          <li>
+            La resta de gasos que hi ha són alguns dels gasos nobles, com per exemple: Argó (Ar), Neó (Ne) i Heli (He).
+          </li>
+        </list>
+        <h3>Gasos d'Efecte Hivernacle</h3>
+        <list>
+          <li>
+            El vapor d'aigua (H2O), també és considerat un gas d'efecte hivernacle, i és un dels que més contribueix en l'efecte hivernacle. Però aquest gas no preocupa tant com altres gasos.
+          </li>
+          <li>
+            També hi ha diòxid de carboni (CO2), aquest gas constitueix el 65% dels gasos d’efecte hivernacle. Aquest gas encara que es trobi de forma natural a la natura i a l’atmosfera, el que més preocupa és que actualment, per culpa de l’activitat humana, s’estigui abocant aquest gas amb excés a l’atmosfera. Aquest gas es produeix principalment a partir de quan es cremen combustibles fòssils (petroli, carbó, gas natural, etc) i també per les activitats industrials (foneries, centrals tèrmiques, etc). 
+          </li>
+          <li>
+            El Gas Metà (CH4), és un dels Contaminants Climàtics de Vida Curta, i encara que hi hagi menys quantitat a l'atmosfera, és pitjor que el CO₂. Aquest gas el que fa és que captura els rajos de sol i el manté durant un cert temps, i això el que provoca és que la temperatura del planeta augmenti. De tot el Gas Metà que hi ha a l'atmosfera, un 40% és per causes naturals (volcans, zones humides, etc.). I 60% de metà que hi ha a l'atmosfera és per culpa de l'activitat humana (les mines (principalment de carbó), l'explotació de gas i de petroli, la ramaderia, etc.).
+          </li>
+          <li>
+            Entre altres gasos contaminants, hi ha: l'òxid nitrós (N2O), hexafluorur de sofre (SF6), etc.
+          </li>
+        </list>
+        També existeixen els CFC (clorofluorocarburs), són gasos refrigerants, i el que fan és destruir l'ozó (O3) i per tant són els responsables del forat de la capa d'ozó (és una capa formada naturalment que ens protegeix, tant els humans com a altres éssers vius de les radiacions ultraviolades).
+      </div>
+      </label>
   </body>
 </html>
