@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Quins efectes té?</title>
+    <style>
+      h1 {
+        color: teal;
+        border: 3px teal solid;
+        font-size: 60px;
+        padding: 15px;
+        margin: 0.5em;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+      }
+
+      table th,
+      table td {
+        width: 1%;
+        padding: .5rem;
+        vertical-align: top;
+      }
+      a div {
+        border-radius:20px;
+        position:relative;
+        width:100%;
+        height:400px;
+        background-position:center;
+        background-color:LightGrey;
+        text-align:center;
+        font-size:30px;
+        color:black;
+        text-decoration:none;
+        background-size:100%;
+        background-repeat:no-repeat;
+      }
+      label {
+        padding:10px;
+        margin:5px;
+        background-color: rgba(0,0,0,.05);
+        border-radius:10px;
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0);
+        display:block;
+      }
+      a {
+        text-decoration: none; /* no underline */
+      }
+      p {
+        display:block;
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        background-color:white;
+        font-size:15px;        
+      }
+      div[onclick] {
+        font-size:25px;
+      }
+      h2 {
+        font-size:35px;
+      }
+      h3 {
+        font-size:30px;
+      }
+      .hidden {
+        display:none;
+      }
+      input:checked + h2 + div {
+        display:block;
+      }
+      input + h2 + div {
+        display:none;
+      }
+      #main {
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quins efectes té?</h1>
+    <div id = "main">
+      La contaminació atmosfèrica té molts efectes perjudicials tant per la salut dels éssers vius com per al medi ambient. Els principals efectes que la contaminació provoca al medi ambient són: Contamina els vegetals i els sòls sobre els quals aquests creixen i també provoca problemes ambientals d'abast global com la pluja àcida, el deteriorament de la capa d'ozó, o el canvi climàtic.
+      <label><input class = "hidden" type = "checkbox"/><h2>Pluja àcida:</h2>
+      <div onclick = "return false;">La pluja àcida és causada per una reacció química que comença quan compostos com ara el diòxid de sofre i els òxids de nitrogen surten a l'aire. A més, el tub d'escapament dels automòbils, camions i autobusos també emet òxids de nitrogen i diòxid de sofre en l'aire. <br/>
+Les principals conseqüències que provoca la pluja àcida són: Dissolució del marbre i corrosió d'elements metàl·lics, toxicitat de les aigües subterrànies, danys a les arrels i menor resistència a les plagues i la mort de peixos i algues en llacs i rius.
+</div>
+      </label>
+      <label><input class = "hidden" type = "checkbox"/><h2>Deteriorament de la capa d'ozó:</h2>
+        <div onclick = "return false;">El canvi climàtic és principalment un canvi de clima en tota la terra, fent que la temperatura de la terra variï de forma irregular. El responsable del canvi climàtic és l'ésser humà i les seves emissions de gasos d'efecte hivernacle que escalfen el planeta. El gas més conegut és el CO₂, causant del 63% de l'escalfament global, però hi ha altres com el metà o l'òxid nitrós. Les conseqüències del canvi climàtic ens afecten a tots, ja que afecta a totes les parts de la terra, tant a l'aigua com al sòl com a l'aire. El seu impacte potencial és enorme, es preveuen prediccions de falta d'aigua potable, grans canvis en les condicions per a la producció d'aliments i un augment en els índexs de mortalitat a causa d'inundacions, tempestes, sequeres i onades de calor.
+
+      </div>
+      </label>
+  </body>
+</html>
+  
